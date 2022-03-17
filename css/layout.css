@@ -1,0 +1,77 @@
+@import "reset.css";
+@import "common.css";
+
+
+header{}
+header .inner{
+    /* height: 55px; */
+    font-family: 'Graphik-Bold';
+}
+header .inner h1{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    mix-blend-mode: exclusion;
+    opacity: .8;
+    z-index: 14;
+    color: #cbd910;;
+    /* color: currentColor; */
+}
+header .inner .media{display: none;}
+header .inner a{
+    position: fixed;
+    top: 20px;
+    right:20px;
+    z-index: 2;
+    mix-blend-mode: exclusion;
+    opacity: .8;
+    z-index: 14;
+    color: #cbd910;;
+}
+
+
+footer{
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    position: relative;
+    /* z-index: 1; */
+    overflow: hidden;
+}
+footer .wrap{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+footer .wrap > a h2{
+    transition: opacity .4s ease-out;}
+footer .wrap > a:hover h2{opacity: .3;}
+footer .wrap h2{
+    font-size: 150px;
+    font-family: 'Graphik-Bold';
+    letter-spacing: -5.25px;;
+    text-align: center;
+}
+footer .wrap .info{
+    font-weight: 100;
+    text-align: center;
+    padding: 50px;
+    line-height: 1.6em;
+}
+footer .wrap .info p{padding-top: 20px;}
+
+@media screen and (max-width: 768px){
+    header .inner .media{display: block;}
+    header .inner .nomal{display: none;}
+}
+@media screen and (max-width: 490px){
+    footer .wrap h2 {font-size: 90px;}
+    footer .wrap .info {padding: 30px 0px;}
+    footer .wrap .info p{
+        font-size: 13px;
+        line-height: 1.3em;
+    }
+}
